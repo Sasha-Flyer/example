@@ -24,7 +24,9 @@ float read_data(string filename) {
 	d.ParseStream(is);
 	Value& a = d["a"];
 	Value& b = d["b"];
-	return a.GetFloat() / b.GetFloat();
+	Value& arr = d["array"];
+	return (a.GetFloat() + arr[0].GetFloat()) / (b.GetFloat() + arr[1].GetFloat());
+	
 }
 int main()
 {
