@@ -1,22 +1,10 @@
-﻿// ConsoleApplication3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-#pragma warning(suppress : 4996)
+﻿
 #include "pch.h"
 #include "rapidjson/document.h"
-#include "rapidjson/filewritestream.h"
 #include "rapidjson/filereadstream.h"
-#include "rapidjson/writer.h"
-#include <cstdio>
-#include "rapidjson/stringbuffer.h"
-#include "rapidjson/filewritestream.h"
 #include <iostream>
-#include <sys/stat.h>
 #include <string>
-#include <fstream>
-#include <sstream>
-#include<stdio.h> 
 #include <filesystem>
-#include<stdio.h> 
 
 using namespace rapidjson;
 using namespace std;
@@ -47,4 +35,4 @@ int main()
 	else {
 		cout << "Файл не существует или внутри не JSON строка";
 	}
-	}
+}
